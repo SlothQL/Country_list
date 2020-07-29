@@ -21,7 +21,6 @@ export default {
 
     methods: {
         handleSelect() {
-            console.log("handleSubmit", this.country)
             eventBus.$emit('country-selected', this.country)
         }
     }

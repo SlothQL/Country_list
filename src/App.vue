@@ -42,5 +42,10 @@ export default {
 <style>
   .main-container {
     margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background-color: rgb(212, 224, 238);
   }
 </style>
