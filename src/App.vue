@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="main-container">
     <h1>All countries</h1>
-    <div class="main-container">
+    <div class="body">
       <country-select :countries='countries'></country-select>
       <country-detail :country='selectedCountry'></country-detail>
     </div>
@@ -41,7 +41,6 @@ export default {
 
 <style>
   .main-container {
-    display: flex;
-    justify-content: space-evenly;
+    margin-left: 25px;
   }
 </style>
