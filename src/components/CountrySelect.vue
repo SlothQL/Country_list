@@ -1,6 +1,6 @@
 <template>
   <div>
-      <select v-on:select="handleSelect">
+      <select v-on:select="handleSelect" v-model="country">
           <option v-for="(country, index) in countries" :country="country" :key="index">{{country.name}}</option>
       </select>
   </div>
@@ -11,7 +11,13 @@ import { eventBus } from '@/main.js'
 
 export default {
     name: 'country-select',
-    props: ['countries', 'country'],
+    data() {
+        return {
+            country: ''
+        }
+    },
+
+    props: ['countries'],
 
     methods: {
         handleSelect: function() {
