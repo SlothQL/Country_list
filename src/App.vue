@@ -1,8 +1,10 @@
 <template>
   <div>
     <h1>All countries</h1>
-    <countries-list :countries='countries'></countries-list>
-    <country-detail :country='selectedCountry'></country-detail>
+    <div class="main-container">
+      <countries-list :countries='countries'></countries-list>
+      <country-detail :country='selectedCountry'></country-detail>
+    </div>
   </div>
 </template>
 
@@ -38,5 +40,8 @@ export default {
 
 
 <style>
-
+  .main-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
 </style>
